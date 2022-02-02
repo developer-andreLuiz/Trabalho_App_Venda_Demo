@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Downloads\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj": {}
+    "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Downloads\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj": {
+    "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Downloads\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj",
+        "projectUniqueName": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj",
         "projectName": "Trabalho_App_Venda_Demo",
-        "projectPath": "C:\\Users\\Developer\\Downloads\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj",
+        "projectPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj",
         "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Downloads\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\obj\\",
+        "outputPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,13 +46,25 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.7.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2337, )"
+            },
+            "Xamarin.Forms.OpenWhatsApp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

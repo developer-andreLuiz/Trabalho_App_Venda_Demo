@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho_App_Venda_Demo.Telas.PageMenu">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="5">
+            <StackLayout HeightRequest="100">
+                <Label x:Name="lblNome" Text="Menu" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30"/>
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="btnMeusPedidos" Text="Meus Pedidos" Clicked="btnMeusPedidos_Clicked"/>
+                <Button x:Name="btnCentralAtendimento" Text="Central de Atendimento" Clicked="btnCentralAtendimento_Clicked"/>
+                <Button x:Name="btnPoliticaPrivacidade" Text="Politica de Privacidade" Clicked="btnPoliticaPrivacidade_Clicked"/>
+                <Button x:Name="btnConfiguracoes" Text="Configurações" Clicked="btnConfiguracoes_Clicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

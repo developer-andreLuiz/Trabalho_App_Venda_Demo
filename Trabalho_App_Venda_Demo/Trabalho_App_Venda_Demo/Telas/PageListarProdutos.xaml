@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho_App_Venda_Demo.Telas.PageListarProdutos">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <!-- Barra Superior de Menu 0028FF -->
+            <Grid BackgroundColor="#1e90ff" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="70*"/>
+                    <ColumnDefinition Width="15*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Column="0" x:Name="imgBtnHome" Source="home.png" Aspect="AspectFit"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="#1e90ff" Clicked="imgBtnHome_Clicked"/>
+                <SearchBar Grid.Column="1" Placeholder="Buscar Produtos..." VerticalOptions="Start" HorizontalOptions="Start" FontSize="16" VerticalTextAlignment="End" TextColor="White" />
+                <StackLayout Grid.Column="2" Spacing="0">
+                    <ImageButton x:Name="imgBtnCarrinho" Source="carrinhocompra.png" Aspect="AspectFit"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="#1e90ff" Clicked="imgBtnCarrinho_Clicked"/>
+                    <Label x:Name="lblValorTotal" Text="R$1000,00" FontSize="10" FontAttributes="Bold" HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="White"/>
+                </StackLayout>
+
+            </Grid>
+            <!-- Collection View Pai -->
+            <CollectionView Grid.Row="1" x:Name="collectionViewTela" Margin="0,0,0,0" SelectionMode="None" ItemSizingStrategy="MeasureAllItems"  >
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="2">
+                            <Frame x:Name="frmPai" BorderColor="LightGray" CornerRadius="15" HasShadow="False" Padding="1" IsClippedToBounds="True">
+                                <Grid  Padding="0" ColumnSpacing="0" RowSpacing="0" Margin="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="65*"/>
+                                        <ColumnDefinition Width="35*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Inicio Coluna 0-->
+                                    <Grid Grid.Column="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="140"/>
+                                            <RowDefinition Height="20"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Grid.Row="0" x:Name="imgRef" HorizontalOptions="Start" BackgroundColor="Transparent" Aspect="AspectFit">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="imgProduto_Tapped"  CommandParameter="{Binding .}"/>
+                                            </Image.GestureRecognizers>
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding img}" CachingEnabled="False" CacheValidity="0" />
+                                            </Image.Source>
+                                        </Image>
+                                        <Label Grid.Row="0" BackgroundColor="Black" Text="{Binding gramatura}" FontSize="10" TextColor="White" VerticalOptions="End" HorizontalOptions="Center" />
+                                        <Label Grid.Row="1" Text="{Binding nome}" FontSize="8" TextColor="#230BD5" VerticalOptions="Start" HorizontalOptions="Start"/>
+                                    </Grid>
+                                    <!-- Fim Coluna 0-->
+
+                                    <!-- Inicio Coluna 1-->
+                                    <Grid Grid.Column="1" HeightRequest="160" RowSpacing="0" ColumnSpacing="0" Margin="0" Padding="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="20"/>
+                                            <!--Linha 0-->
+                                            <RowDefinition Height="40"/>
+                                            <!--Linha 1-->
+                                            <RowDefinition Height="20"/>
+                                            <!--linha 2-->
+                                            <RowDefinition Height="60"/>
+                                            <!--linha 3-->
+                                            <RowDefinition Height="*"/>
+                                            <!--linha 4-->
+                                        </Grid.RowDefinitions>
+
+                                        <!--Linha 0-->
+                                        <Image Grid.Row="0" x:Name="imgQuantidade" Source="{Binding caminho_img_quantidade}"  BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center"/>
+                                        <Label Grid.Row="0" x:Name="lblQuantidade" Text="{Binding quantidade}" TextColor="White" HorizontalOptions="Center"/>
+
+                                        <!--Linha 1-->
+                                        <Label Grid.Row="1" Text="{Binding valor_atual}"  FontSize="12" TextColor="#C80E0E" VerticalOptions="End" HorizontalOptions="Start" FontAttributes="Bold"/>
+
+                                        <!--Linha 2-->
+                                        <Label Grid.Row="2" Text="{Binding valor_antigo}"  FontSize="8" TextColor="#230BD5" VerticalOptions="Start" HorizontalOptions="Start" TextDecorations="Strikethrough"/>
+
+                                        <!--Linha 3-->
+                                        <Image Grid.Row="3" x:Name="imgMenos" Source="{Binding caminho_img_menos}" WidthRequest="35" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" BackgroundColor="Transparent">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="imgMenos_Tapped" CommandParameter="{Binding .}"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
+
+                                        <!--Linha 4-->
+                                        <StackLayout Grid.Row="4" Orientation="Horizontal">
+
+
+
+                                            <Image Source="interrogacao.png" WidthRequest="25" HeightRequest="25" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Aspect="AspectFit" BackgroundColor="Transparent">
+                                                <Image.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="imgInterrogacao_Tapped" CommandParameter="{Binding .}"/>
+                                                </Image.GestureRecognizers>
+                                            </Image>
+
+                                        </StackLayout>
+
+
+
+
+
+
+                                    </Grid>
+                                    <!-- Fim Coluna 1-->
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho_App_Venda_Demo.Telas.PageCarrinhoDeCompra">
+    <ContentPage.Content>
+        <StackLayout  Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" BackgroundColor="#1e90ff" HeightRequest="60" WidthRequest="60" Spacing="10">
+                <ImageButton x:Name="imgBtnHome" Source="home.png" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"  BackgroundColor="Transparent" Clicked="imgBtnHome_Clicked"/>
+                <Label Text="Total da Compra" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                <Label x:Name="lblTotal" Text="" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                <ImageButton x:Name="imgBtnLixeira" Source="lixeira.png" Aspect="AspectFit" HorizontalOptions="EndAndExpand" HeightRequest="50" WidthRequest="50"  BackgroundColor="Transparent" Clicked="imgBtnLixeira_Clicked"/>
+            </StackLayout>
+            <CollectionView x:Name="collectionViewTela" Margin="0,0,0,0"   SelectionMode="None" ItemSizingStrategy="MeasureAllItems" ItemsSource="{Binding CarrinhoDeCompras}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="1"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame BorderColor="LightGray" CornerRadius="15" HasShadow="False" Padding="5">
+                                <StackLayout Orientation="Horizontal" >
+                                    <Image  HorizontalOptions="Start" HeightRequest="50" WidthRequest="50">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding img}" CachingEnabled="False" CacheValidity="0" />
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding nome}" FontSize="8" TextColor="#000000" WidthRequest="100" HeightRequest="25" VerticalTextAlignment="Center"/>
+                                        <Label Text="{Binding valor_venda}" FontSize="8" TextColor="Red" VerticalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <Image Source="menos.png" WidthRequest="35" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" BackgroundColor="Transparent">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="imgMenosLista" CommandParameter="{Binding .}"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Label Text="{Binding quantidade}" FontSize="14" TextColor="#000000" VerticalTextAlignment="Center"/>
+                                    <Image Source="mais.png" WidthRequest="35" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" BackgroundColor="Transparent">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="imgMaisLista" CommandParameter="{Binding .}"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Label Text="{Binding valor_total}" FontSize="12" TextColor="#000000" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                                    <Image  Source="lixeiracarro.png" WidthRequest="35" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Aspect="AspectFit" BackgroundColor="Transparent">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="imgLixeiraLista" CommandParameter="{Binding .}"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

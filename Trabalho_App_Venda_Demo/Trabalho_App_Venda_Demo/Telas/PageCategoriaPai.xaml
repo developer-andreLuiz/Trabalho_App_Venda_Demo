@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho_App_Venda_Demo.Telas.PageCategoriaPai">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <!-- Barra Superior de Menu 0028FF -->
+            <Grid BackgroundColor="#1e90ff" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="70*"/>
+                    <ColumnDefinition Width="15*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Column="0" x:Name="imgBtnMenu" Source="menu.png" Aspect="AspectFit"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="#1e90ff" Clicked="imgBtnMenu_Clicked"/>
+                <SearchBar Grid.Column="1" Placeholder="Procurar Produtos..." VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" TextColor="White"/>
+                <ImageButton Grid.Column="2" x:Name="imgBtnCarrinho" Source="carrinhocompra.png" Aspect="AspectFit"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="#1e90ff" Clicked="imgBtnCarrinho_Clicked"/>
+            </Grid>
+            <!-- Collection View Pai -->
+            <CollectionView Grid.Row="1" x:Name="collectionViewTela" Margin="0,0,0,0" SelectionMode="None" ItemSizingStrategy="MeasureAllItems">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <StackLayout Padding="5" >
+                            <!--espaço entre os frames-->
+
+                            <Frame BorderColor="LightGray" CornerRadius="15" HasShadow="True" IsClippedToBounds="True" Padding="2">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout Orientation="Vertical" Spacing="0" Padding="0">
+
+                                    <Image>
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding Img}" CachingEnabled="False" CacheValidity="0" />
+                                        </Image.Source>
+                                    </Image>
+
+                                    <Label x:Name="lblNome" Text="{Binding Nome}" FontSize="12" TextColor="#000000" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+                                </StackLayout>
+
+
+
+                            </Frame>
+                        </StackLayout>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
