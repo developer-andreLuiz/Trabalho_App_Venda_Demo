@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9FxvH8m79zIyx1Nc/HgtKMHxi3VEZvVg6ZnE14RFTKOCFq494yrOrd/t5ZWoAGn5Q2+4uWiciAzIdfFnuF+eAA==",
+  "dgSpecHash": "hrqEnzUeS5Bu/CdE9k6+gKWjAHZJYTeVPxX7IE+FMppTH0Vyo63aK9sA76WS+d8tVDhrygJb6cJlmacNv1fXpg==",
   "success": true,
-  "projectFilePath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
+  "projectFilePath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Developer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Developer\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",

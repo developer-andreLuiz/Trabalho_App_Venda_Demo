@@ -3474,11 +3474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
+      "projectUniqueName": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
       "projectName": "Trabalho_App_Venda_Demo.Android",
-      "projectPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
+      "projectPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
       "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\obj\\",
+      "outputPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -3495,8 +3495,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj": {
-              "projectPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj"
+            "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj": {
+              "projectPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.csproj"
             }
           }
         }
