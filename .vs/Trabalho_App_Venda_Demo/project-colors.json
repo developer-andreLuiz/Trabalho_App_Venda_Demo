@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e195438a-710e-4cbc-81fe-1e6c3955db5f": {
+      "ProjectGuid": "e195438a-710e-4cbc-81fe-1e6c3955db5f",
+      "DisplayName": "Trabalho_App_Venda_Demo",
+      "ColorIndex": 0
+    },
+    "c2f44028-f070-4e8b-85f6-c0a1b0b532ac": {
+      "ProjectGuid": "c2f44028-f070-4e8b-85f6-c0a1b0b532ac",
+      "DisplayName": "Trabalho_App_Venda_Demo.Android",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

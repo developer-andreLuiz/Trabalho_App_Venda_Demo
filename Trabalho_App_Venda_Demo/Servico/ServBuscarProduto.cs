@@ -10,7 +10,7 @@ namespace Trabalho_App_Venda_Demo.Servico
 {
     class ServBuscarProduto
     {
-        private static string EnderecoUrl = " https://apimercadoonline.azurewebsites.net/api/produtos";
+        private static string EnderecoUrl = "https://api-mercado-online.azurewebsites.net/api/produto";
         public static void BuscarProdutoResultado()
         {
             WebClient wc = new WebClient();

@@ -17,7 +17,7 @@ namespace Trabalho_App_Venda_Demo
             Thread categoriaNivel4 = new Thread(BuscarCaterogiaNivel4);
             Thread produto = new Thread(BuscarProduto);
             Thread produtosCategoria = new Thread(BuscarProdutosCategoria);
-            
+
             categoriaNivel2.Start();
             categoriaNivel3.Start();
             categoriaNivel4.Start();
