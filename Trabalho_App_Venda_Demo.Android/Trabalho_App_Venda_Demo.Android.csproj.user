@@ -4,5 +4,7 @@
     <SelectedDevice>Samsung SM-A037M</SelectedDevice>
     <ActiveDebugProfile>Samsung SM-A037M</ActiveDebugProfile>
     <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

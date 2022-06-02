@@ -10,8 +10,8 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="AppVendaDemo" android:theme="@style/MainTheme" android:icon="@mipmap/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Trabalho_App_Venda_Demo" android:theme="@style/MainTheme" android:name="crc64f5ccc88c1068f42b.MainActivity" android:exported="true">
+  <application android:label="Mercado Tittio Demo" android:theme="@style/MainTheme" android:icon="@mipmap/icon_" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon_" android:label="Mercado Tittio Demo" android:theme="@style/MainTheme" android:name="crc64f5ccc88c1068f42b.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -56,25 +56,25 @@ namespace Trabalho_App_Venda_Demo.Telas
 
             PushAsyncWithoutDuplicate(new PageCarrinhoDeCompra());
         }
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             try
             {
                 Frame frame = (Frame)sender;
-                Label x = frame.FindByName<Label>("lblNome");
-
-                if (x.Text != null)
+                Label lbl = frame.FindByName<Label>("lblNome");
+                if (lbl.Text != null)
                 {
-                    foreach (var a in Global.instancia.listaCategoriaNivel4)
+                    Global.instancia.id_Categoria_Nivel4 = Global.instancia.listaCategoriaNivel4.Find(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && x.CategoriaNivel3 == Global.instancia.id_Categoria_Nivel3 && x.Nome.Equals(lbl.Text)).Id;
+                    var l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && x.CategoriaNivel3 == Global.instancia.id_Categoria_Nivel3 && x.CategoriaNivel4 == Global.instancia.id_Categoria_Nivel4);
+                    if (l.Count > 0)
                     {
-                        if (a.Nome.Equals(x.Text) && a.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && a.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && a.CategoriaNivel3 == Global.instancia.id_Categoria_Nivel3)
-                        {
-                            Global.instancia.id_Categoria_Nivel4 = a.Id;
-                            break;
-                        }
+                        PushAsyncWithoutDuplicate(new PageListarProdutos());
                     }
-
-                    PushAsyncWithoutDuplicate(new PageListarProdutos());
+                    else
+                    {
+                        await DisplayAlert("Atenção","Produto não Encontrado","OK");
+                    }
+                    
                 }
             }
             catch { }

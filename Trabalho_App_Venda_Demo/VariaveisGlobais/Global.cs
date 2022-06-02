@@ -21,6 +21,8 @@ namespace Trabalho_App_Venda_Demo.VariaveisGlobais
 
         public List<ProdutosCategoriaRetorno> listaProdutosCategoria = new List<ProdutosCategoriaRetorno>();
 
+        public int pronto = 0;
+
         public int id_Categoria_Nivel1 { get; set; }
         public int id_Categoria_Nivel2 { get; set; }
         public int id_Categoria_Nivel3 { get; set; }

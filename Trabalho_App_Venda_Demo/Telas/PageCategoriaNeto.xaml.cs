@@ -61,37 +61,21 @@ namespace Trabalho_App_Venda_Demo.Telas
             try
             {
                 Frame frame = (Frame)sender;
-                Label x = frame.FindByName<Label>("lblNome");
-
-                if (x.Text != null)
+                Label lbl = frame.FindByName<Label>("lblNome");
+                if (lbl.Text != null)
                 {
-                    foreach (var a in Global.instancia.listaCategoriaNivel3)
-                    {
-                        if (a.Nome.Equals(x.Text) && a.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && a.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2)
-                        {
-                            Global.instancia.id_Categoria_Nivel3 = a.Id;
-                            break;
-                        }
-                    }
-                    bool bisnetoLocal = false;
+                    Global.instancia.id_Categoria_Nivel3 = Global.instancia.listaCategoriaNivel3.Find(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && x.Nome.Equals(lbl.Text)).Id;
+                    Global.instancia.id_Categoria_Nivel4 = 0;
 
-                    foreach (var a in Global.instancia.listaCategoriaNivel4)
+                    //verificacr se tem produto
+                    var l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && x.CategoriaNivel3 == Global.instancia.id_Categoria_Nivel3 && x.CategoriaNivel4 == 0);
+                    if (l.Count > 0)
                     {
-                        if (a.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && a.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && a.CategoriaNivel3 == Global.instancia.id_Categoria_Nivel3)
-                        {
-                            bisnetoLocal = true;
-                            break;
-                        }
-                    }
-                    if (bisnetoLocal)
-                    {
-                        PushAsyncWithoutDuplicate(new PageCategoriaBisneto());
+                        PushAsyncWithoutDuplicate(new PageListarProdutos());
                     }
                     else
                     {
-
-                        Global.instancia.id_Categoria_Nivel4 = 0;
-                        PushAsyncWithoutDuplicate(new PageListarProdutos());
+                        PushAsyncWithoutDuplicate(new PageCategoriaBisneto());
                     }
 
                 }

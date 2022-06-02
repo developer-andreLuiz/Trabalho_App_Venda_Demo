@@ -21,11 +21,10 @@ C:\Users\Developer\Downloads\Trabalho_App_Venda_Demo-master\Trabalho_App_Venda_D
 C:\Users\Developer\Downloads\Trabalho_App_Venda_Demo-master\Trabalho_App_Venda_Demo-master\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Trabalho_App_Venda_Demo.pdb
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\bin\Debug\netstandard2.0\Trabalho_App_Venda_Demo.deps.json
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\bin\Debug\netstandard2.0\Trabalho_App_Venda_Demo.dll
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\bin\Debug\netstandard2.0\ref\Trabalho_App_Venda_Demo.dll
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\bin\Debug\netstandard2.0\Trabalho_App_Venda_Demo.pdb
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Trabalho_App_Venda_Demo.csproj.AssemblyReference.cache
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Trabalho_App_Venda_Demo.GeneratedMSBuildEditorConfig.editorconfig
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\App.xaml.g.cs
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Telas\PageCarrinhoDeCompra.xaml.g.cs
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Telas\PageCategoriaBisneto.xaml.g.cs
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Telas\PageCategoriaFilho.xaml.g.cs
@@ -38,5 +37,6 @@ D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Trabalho_App_Venda_Demo.csproj.CoreCompileInputs.cache
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Trabalho_App_Venda_Demo.dll
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\ref\Trabalho_App_Venda_Demo.dll
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\refint\Trabalho_App_Venda_Demo.dll
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\Trabalho_App_Venda_Demo.pdb
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo\obj\Debug\netstandard2.0\ref\Trabalho_App_Venda_Demo.dll

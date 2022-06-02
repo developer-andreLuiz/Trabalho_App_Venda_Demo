@@ -17,6 +17,7 @@ namespace Trabalho_App_Venda_Demo.Servico
             string conteudo = wc.DownloadString(EnderecoUrl);
 
             Global.instancia.listaProdutosCategoria = JsonConvert.DeserializeObject<List<ProdutosCategoriaRetorno>>(conteudo);
+            Global.instancia.pronto++;
         }
     }
 }

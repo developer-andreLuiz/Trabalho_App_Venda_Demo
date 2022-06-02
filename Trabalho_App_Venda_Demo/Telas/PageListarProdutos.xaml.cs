@@ -42,7 +42,7 @@ namespace Trabalho_App_Venda_Demo.Telas
             //Alimenta list
             foreach (var c in listCategoria)
             {
-                ProdutoRetorno produtoRetorno = Global.instancia.listaProdutos[Global.instancia.listaProdutos.FindIndex(a => a.Id == c.CodigoProduto)];
+                ProdutoRetorno produtoRetorno = Global.instancia.listaProdutos[Global.instancia.listaProdutos.FindIndex(a => a.Id == c.Produto)];
 
                 ProdutoLista pLista = new ProdutoLista();
 

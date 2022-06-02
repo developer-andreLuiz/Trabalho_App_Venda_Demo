@@ -46,40 +46,28 @@ namespace Trabalho_App_Venda_Demo.Telas
             try
             {
                 Frame frame = (Frame)sender;
-                Label x = frame.FindByName<Label>("lblNome");
+                Label lbl = frame.FindByName<Label>("lblNome");
 
-                if (x.Text != null)
+                if (lbl.Text != null)
                 {
-                    foreach (var a in Global.instancia.listaCategoriaNivel1)
-                    {
-                        if (a.Nome.Equals(x.Text))
-                        {
-                            Global.instancia.id_Categoria_Nivel1 = a.Id;
-                            break;
-                        }
-                    }
+                    Global.instancia.id_Categoria_Nivel1 = Global.instancia.listaCategoriaNivel1.Find(x=>x.Nome.Equals(lbl.Text)).Id;
+                    Global.instancia.id_Categoria_Nivel2 = 0;
+                    Global.instancia.id_Categoria_Nivel3 = 0;
+                    Global.instancia.id_Categoria_Nivel4 = 0;
 
-                    bool filhoLocal = false;
 
-                    foreach (var a in Global.instancia.listaCategoriaNivel2)
+                    //verificacr se tem produto
+
+                    var l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == 0 && x.CategoriaNivel3 == 0 && x.CategoriaNivel4 == 0);
+                    if (l.Count > 0)
                     {
-                        if (a.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1)
-                        {
-                            filhoLocal = true;
-                            break;
-                        }
-                    }
-                    if (filhoLocal)
-                    {
-                        PushAsyncWithoutDuplicate(new PageCategoriaFilho());
+                        PushAsyncWithoutDuplicate(new PageListarProdutos());
                     }
                     else
                     {
-                        Global.instancia.id_Categoria_Nivel2 = 0;
-                        Global.instancia.id_Categoria_Nivel3 = 0;
-                        Global.instancia.id_Categoria_Nivel4 = 0;
-                        PushAsyncWithoutDuplicate(new PageListarProdutos());
+                        PushAsyncWithoutDuplicate(new PageCategoriaFilho());
                     }
+
 
                 }
             }
