@@ -3469,8 +3469,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Developer\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Andre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3478,16 +3477,12 @@
       "projectUniqueName": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
       "projectName": "Trabalho_App_Venda_Demo.Android",
       "projectPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\Trabalho_App_Venda_Demo.Android.csproj",
-      "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
       "outputPath": "D:\\Git\\Trabalho_App_Venda_Demo\\Trabalho_App_Venda_Demo.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3527,7 +3522,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Downgrade de pacote detectado: Xamarin.Essentials de 1.7.1 para 1.7.0. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n Trabalho_App_Venda_Demo.Android -> Trabalho_App_Venda_Demo -> Xamarin.Essentials (>= 1.7.1) \r\n Trabalho_App_Venda_Demo.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.1 to 1.7.0. Reference the package directly from the project to select a different version. \r\n Trabalho_App_Venda_Demo.Android -> Trabalho_App_Venda_Demo -> Xamarin.Essentials (>= 1.7.1) \r\n Trabalho_App_Venda_Demo.Android -> Xamarin.Essentials (>= 1.7.0)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "MonoAndroid,Version=v12.0"
@@ -3537,7 +3532,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Downgrade de pacote detectado: Xamarin.Forms de 5.0.0.2337 para 5.0.0.2196. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n Trabalho_App_Venda_Demo.Android -> Trabalho_App_Venda_Demo -> Xamarin.Forms (>= 5.0.0.2337) \r\n Trabalho_App_Venda_Demo.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2337 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n Trabalho_App_Venda_Demo.Android -> Trabalho_App_Venda_Demo -> Xamarin.Forms (>= 5.0.0.2337) \r\n Trabalho_App_Venda_Demo.Android -> Xamarin.Forms (>= 5.0.0.2196)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v12.0"

@@ -29,13 +29,25 @@ namespace Trabalho_App_Venda_Demo.Telas
             List<ProdutosCategoriaRetorno> listCategoria = new List<ProdutosCategoriaRetorno>();
             List<ProdutoLista> list = new List<ProdutoLista>();
 
-            //Alimenta listCategoria
-            foreach (var b in Global.instancia.listaProdutosCategoria)
+            if (Global.instancia.id_Categoria_Nivel1 != -1)
             {
-                if (b.CategoriaNivel1==Global.instancia.id_Categoria_Nivel1 && b.CategoriaNivel2==Global.instancia.id_Categoria_Nivel2 && b.CategoriaNivel3==Global.instancia.id_Categoria_Nivel3 && b.CategoriaNivel4==Global.instancia.id_Categoria_Nivel4)
-                {
-                    listCategoria.Add(b);
-                }
+                var l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1);
+                listCategoria = l;
+            }
+            if (Global.instancia.id_Categoria_Nivel2 != -1)
+            {
+                var l = listCategoria.FindAll(x => x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2);
+                listCategoria = l;
+            }
+            if (Global.instancia.id_Categoria_Nivel3 != -1)
+            {
+                var l = listCategoria.FindAll(x => x.CategoriaNivel3 == Global.instancia.id_Categoria_Nivel3);
+                listCategoria = l;
+            }
+            if (Global.instancia.id_Categoria_Nivel4 != -1)
+            {
+                var l = listCategoria.FindAll(x => x.CategoriaNivel4 == Global.instancia.id_Categoria_Nivel4);
+                listCategoria = l;
             }
 
 

@@ -69,9 +69,17 @@ namespace Trabalho_App_Venda_Demo.Telas
                     Global.instancia.id_Categoria_Nivel3 = 0;
                     Global.instancia.id_Categoria_Nivel4 = 0;
 
-                    //verificacr se tem produto
+                    //verificar se tem produto
+                    var l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2);
+                    if (l.Count < 13)
+                    {
+                        Global.instancia.id_Categoria_Nivel3 = -1;
+                        Global.instancia.id_Categoria_Nivel4 = -1;
+                        PushAsyncWithoutDuplicate(new PageListarProdutos());//junta tudo
+                        return;
+                    }
 
-                    var l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && x.CategoriaNivel3 == 0 && x.CategoriaNivel4 == 0);
+                    l = Global.instancia.listaProdutosCategoria.FindAll(x => x.CategoriaNivel1 == Global.instancia.id_Categoria_Nivel1 && x.CategoriaNivel2 == Global.instancia.id_Categoria_Nivel2 && x.CategoriaNivel3 == 0 && x.CategoriaNivel4 == 0);
                     if (l.Count > 0)
                     {
                         PushAsyncWithoutDuplicate(new PageListarProdutos());

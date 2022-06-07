@@ -1540,3 +1540,4 @@ D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\mipmap-xxxhdpi\icon_.png
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\mipmap-xxxhdpi\icon__adaptive_back.png
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\mipmap-xxxhdpi\icon__adaptive_fore.png
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\assets\Java.Interop.pdb
