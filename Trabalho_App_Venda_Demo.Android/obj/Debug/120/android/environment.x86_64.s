@@ -1557,7 +1557,7 @@ application_config:
 
 	.type	.L.autostr.6, @object
 .L.autostr.6:
-	.asciz	"df9dfb0a-5ebf-4a7b-a534-769de64b6faa"
+	.asciz	"f850322f-fa1f-4ec2-a1f0-e6c1765204a9"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, @object
@@ -1752,8 +1752,8 @@ application_config:
 
 	.type	.L.autostr.45, @object
 .L.autostr.45:
-	.asciz	"com.Developer.AppVendaDemo"
-	.size	.L.autostr.45, 27
+	.asciz	"com.Developer.MercadoTittio"
+	.size	.L.autostr.45, 28
 
 
 	.ident	"Xamarin.Android remotes/origin/d17-2 @ bbba5a21f3b649a761b22d83959758b4d30df672"

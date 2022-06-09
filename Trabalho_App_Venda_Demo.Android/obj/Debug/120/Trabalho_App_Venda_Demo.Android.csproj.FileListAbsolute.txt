@@ -888,11 +888,6 @@ C:\Users\Developer\Downloads\Trabalho_App_Venda_Demo-master\Trabalho_App_Venda_D
 C:\Users\Developer\Downloads\Trabalho_App_Venda_Demo-master\Trabalho_App_Venda_Demo-master\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\Trabalho_App_Venda_Demo.Android.dll
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\Trabalho_App_Venda_Demo.Android.pdb
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.AppVendaDemo.apk
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.AppVendaDemo.aab
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.AppVendaDemo-Signed.aab
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.AppVendaDemo-Signed.apk
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.AppVendaDemo-Signed.apk.idsig
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\Trabalho_App_Venda_Demo.dll
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\Trabalho_App_Venda_Demo.pdb
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
@@ -932,10 +927,7 @@ D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\Tra
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\Trabalho_App_Venda_Demo.Android.csproj.CopyComplete
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\Trabalho_App_Venda_Demo.Android.dll
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\Trabalho_App_Venda_Demo.Android.pdb
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\com.Developer.AppVendaDemo.apk
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\base.zip
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\com.Developer.AppVendaDemo.aab
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\com.Developer.AppVendaDemo.apks
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\values\styles.xml
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\values\colors.xml
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\drawable\carrinhocompra.png
@@ -1495,7 +1487,6 @@ D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\and
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\src\mono\MonoPackageManager_Resources.java
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\src\xamarin\essentials\fileProvider.java
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\packaged_resources
-D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\src\com\developer\appvendademo\R.java
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\compressed_assemblies.arm64-v8a.s
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\compressed_assemblies.armeabi-v7a.s
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\compressed_assemblies.x86.s
@@ -1541,3 +1532,12 @@ D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\mipmap-xxxhdpi\icon__adaptive_back.png
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\res\mipmap-xxxhdpi\icon__adaptive_fore.png
 D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\assets\Java.Interop.pdb
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.MercadoTittio.apk
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.MercadoTittio.aab
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.MercadoTittio-Signed.aab
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.MercadoTittio-Signed.apk
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\bin\Debug\com.Developer.MercadoTittio-Signed.apk.idsig
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\com.Developer.MercadoTittio.apk
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\com.Developer.MercadoTittio.aab
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\bin\com.Developer.MercadoTittio.apks
+D:\Git\Trabalho_App_Venda_Demo\Trabalho_App_Venda_Demo.Android\obj\Debug\120\android\src\com\developer\mercadotittio\R.java
